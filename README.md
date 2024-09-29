@@ -12,7 +12,18 @@ pip install matplotlib==3.7.2 numpy==1.21.2
 
 ## Datasets
 
-1. Download the tetrapeptide MD datasets:
+0. prepare
+
+  Here is how you can do it in Ubuntu:
+ <pre>
+
+sudo apt-get install apt-transport-https ca-certificates gnupg
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add - 
+sudo apt-get update && sudo apt-get install google-cloud-cli
+ </pre>pre>
+
+2. Download the tetrapeptide MD datasets:
 <pre>
 mkdir -p data/4AA_sims data/4AA_sims_implicit
 gsutil rsync -r gs://mdgen/4AA_sims data/4AA_sims
