@@ -44,3 +44,14 @@ python -m scripts.prep_sims --splits splits/4AA_implicit.csv --sim_dir data/4AA_
 <pre>
 python -m scripts.prep_sims --splits splits/4AA.csv --sim_dir data/4AA_sims --outdir data/4AA_data --num_workers [N]
 </pre>
+
+## References
+
+bjing2016/mdgen
+
+https://github.com/bjing2016/mdgen
+
+linux - How to configure gsutil? - Stack Overflow
+
+https://stackoverflow.com/questions/7989741/how-to-configure-gsutil
+
